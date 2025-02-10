@@ -12,13 +12,15 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37423b; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +31,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #272828;  /* The default color of the main navmenu links */
+  --nav-color: #272828; /* The default color of the main navmenu links */
   --nav-hover-color: #5fcf80; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -73,7 +75,7 @@ a {
 }
 
 a:hover {
-  color: rgb(49,37,129);
+  color: rgb(49, 37, 129);
   /* color: color-mix(in srgb, var(--accent-color), transparent 25%); */
   text-decoration: none;
 }
@@ -145,7 +147,10 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -236,33 +241,34 @@ h6 {
 
 .header .logo img {
   max-height: 65px;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .header .logo h1 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   margin: 0;
   letter-spacing: 1px;
-  text-transform:capitalize;
-  color: rgb(49,37,129);
+  text-transform: capitalize;
+  color: rgb(49, 37, 129);
 }
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: rgb(49,37,129);
+  background: rgb(49, 37, 129);
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 50px;
   transition: 0.3s;
+  font-size: 10px;
 }
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: rgb(128, 122, 169)
+  background: rgb(128, 122, 169);
 }
 
 @media (max-width: 1200px) {
@@ -309,26 +315,26 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-  padding: 0px 15px;
-  font-size: 16px;
-  font-family: var(--nav-font);
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: color 0.3s;
-  position: relative;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
   }
   .navmenu a::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 15px;
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: rgb(49,36,130);
+    background-color: rgb(49, 36, 130);
     transition: width 1s ease;
   }
 
@@ -344,11 +350,10 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
-  .navmenu .active:focus 
-  .navmenu a:hover{
-    color: rgb(49,37,129);
+  .navmenu .active:focus .navmenu a:hover {
+    color: rgb(49, 37, 129);
   }
   .navmenu a:hover::after {
     width: 75%;
@@ -387,11 +392,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -403,7 +408,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -414,10 +419,10 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
+    color: #312481;
+    font-size: 24px;
     line-height: 0;
-    margin-right: 10px;
+    margin-right: 5px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -446,7 +451,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
-    padding: 10px 20px;
+    padding: 0px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
     font-weight: 500;
@@ -469,24 +474,24 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: rgb(49,37,129);
+    background-color: rgb(49, 37, 129);
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: rgb(49,37,129);
+    background-color: rgb(49, 37, 129);
     color: var(--contrast-color);
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: rgb(49,37,129);
+    color: rgb(49, 37, 129);
   }
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: rgb(49,37,129);
+    background-color: rgb(49, 37, 129);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
@@ -505,7 +510,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -532,7 +537,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -574,7 +579,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.footer .social-links a{
+.footer .social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -589,8 +594,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: rgb(49,37,130);
-  border-color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
+  border-color: rgb(49, 37, 130);
 }
 
 .footer h4 {
@@ -633,7 +638,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
   transition: 0.1s;
 }
 
@@ -657,7 +662,7 @@ h6 {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: 100%;
@@ -665,23 +670,23 @@ h6 {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px 2px 20px;
   margin: -7px -8px -7px 0;
-  background:  rgb(49,37,130);
+  background: rgb(49, 37, 130);
   color: var(--contrast-color);
   transition: 0.3s;
   border-radius: 50px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background:  rgb(159, 153, 196);
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
+  background: rgb(159, 153, 196);
 }
 
 .footer .copyright {
@@ -694,14 +699,14 @@ h6 {
   margin-bottom: 0;
 }
 .footer .copyright a {
-  color: rgb(68,68,68);
+  color: rgb(68, 68, 68);
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .footer .copyright a:hover {
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
 }
 .footer .credits {
   margin-top: 6px;
@@ -753,7 +758,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: rgb(49,36,130);
+  background-color: rgb(49, 36, 130);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -791,7 +796,7 @@ h6 {
 --------------------------------------------------------------*/
 .page-title {
   --default-color: var(--contrast-color);
-  --background-color: rgb(49,37,130);
+  --background-color: rgb(49, 37, 130);
   --heading-color: var(--contrast-color);
   color: var(--default-color);
   background-color: var(--background-color);
@@ -800,7 +805,8 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -809,7 +815,7 @@ h6 {
 }
 
 .page-title nav {
-  background-color: rgb(49,37,130);
+  background-color: rgb(49, 37, 130);
   padding: 20px 0;
 }
 
@@ -826,11 +832,11 @@ h6 {
   font-weight: 600;
 }
 
-.page-title nav ol li+li {
+.page-title nav ol li + li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.page-title nav ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -850,8 +856,7 @@ section,
 }
 
 @media (max-width: 1199px) {
-
-  section,
+  .section,
   .section {
     scroll-margin-top: 66px;
   }
@@ -882,7 +887,7 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: rgb(49,37,130);
+  background: rgb(49, 37, 130);
   margin: 4px 10px;
 }
 
@@ -958,8 +963,8 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: rgb(49,37,129);
-  border: 2px solid rgb(49,37,129);
+  background: rgb(49, 37, 129);
+  border: 2px solid rgb(49, 37, 129);
 }
 
 @media (max-width: 768px) {
@@ -992,7 +997,7 @@ section,
 .about .content ul i {
   font-size: 1.25rem;
   margin-right: 4px;
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
 }
 
 .about .content p:last-child {
@@ -1000,7 +1005,7 @@ section,
 }
 
 .about .content .read-more {
-  background: rgb(49,37,130);
+  background: rgb(49, 37, 130);
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1045,7 +1050,7 @@ section,
 .counts .stats-item span {
   font-size: 48px;
   display: block;
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
   font-weight: 700;
 }
 
@@ -1063,7 +1068,7 @@ section,
 --------------------------------------------------------------*/
 .why-us .why-box {
   color: var(--contrast-color);
-  background: rgb(49,37,130);
+  background: rgb(49, 37, 130);
   padding: 30px;
 }
 
@@ -1092,7 +1097,7 @@ section,
 }
 
 .why-us .why-box .more-btn:hover {
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
   background: rgb(147, 139, 197);
 }
 
@@ -1109,7 +1114,7 @@ section,
   color: white;
   font-size: 32px;
   margin-bottom: 30px;
-  background: rgb(49,37,130);
+  background: rgb(49, 37, 130);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -1172,11 +1177,11 @@ section,
 }
 
 .features .features-item:hover {
-  border-color: rgb(49,37,130);
+  border-color: rgb(49, 37, 130);
 }
 
 .features .features-item:hover h3 a {
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
 }
 
 /*--------------------------------------------------------------
@@ -1203,11 +1208,11 @@ section,
 }
 
 .courses .course-content h3 a:hover {
-  color: rgb(49,36,129);
+  color: rgb(49, 36, 129);
 }
 
 .courses .course-content .category {
-  background: rgb(49,36,129);
+  background: rgb(49, 36, 129);
   color: var(--contrast-color);
   font-size: 14px;
   padding: 6px 14px;
@@ -1229,7 +1234,8 @@ section,
 
 .courses .trainer {
   padding-top: 15px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .courses .trainer .trainer-profile img {
@@ -1246,7 +1252,7 @@ section,
 }
 
 .courses .trainer .trainer-profile .trainer-link:hover {
-  color: rgb(49,36,129);
+  color: rgb(49, 36, 129);
 }
 
 .courses .trainer .trainer-rank {
@@ -1307,7 +1313,7 @@ section,
 }
 
 .trainers-index .member .social a:hover {
-  color: rgb(49,37,131);
+  color: rgb(49, 37, 131);
 }
 
 .trainers-index .member .social i {
@@ -1433,11 +1439,11 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid rgb(49,37,130);
+  border: 1px solid rgb(49, 37, 130);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgb(49,37,130);
+  background-color: rgb(49, 37, 130);
 }
 
 @media (max-width: 767px) {
@@ -1493,7 +1499,7 @@ section,
   display: block;
   width: 60px;
   height: 1px;
-  background: rgb(49,37,129);
+  background: rgb(49, 37, 129);
   bottom: 0;
   left: 0;
 }
@@ -1517,7 +1523,7 @@ section,
 }
 
 .courses-course-details .course-info a {
-  color: rgb(49,37,130);
+  color: rgb(49, 37, 130);
 }
 
 /*--------------------------------------------------------------
@@ -1538,19 +1544,20 @@ section,
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 600;
   font-size: 15px;
 }
 
 .tabs .nav-link:hover {
-  color: rgb(49,37,129);
+  color: rgb(49, 37, 129);
 }
 
 .tabs .nav-link.active {
   background-color: var(--surface-color);
-  color: rgb(49,37,129);
-  border-color: rgb(49,37,129);
+  color: rgb(49, 37, 129);
+  border-color: rgb(49, 37, 129);
 }
 
 .tabs .tab-pane.active {
@@ -1630,7 +1637,7 @@ section,
 }
 
 .trainers .member .member-img .social a:hover {
-  color: rgb(49,36,129);
+  color: rgb(49, 36, 129);
 }
 
 .trainers .member .member-info {
@@ -1716,11 +1723,11 @@ section,
 }
 
 .events .card:hover .card-body {
-  border-color: rgb(49,36,129);
+  border-color: rgb(49, 36, 129);
 }
 
 .events .card:hover .card-body .card-title a {
-  color: rgb(49,36,129);
+  color: rgb(49, 36, 129);
 }
 
 /*--------------------------------------------------------------
@@ -1794,7 +1801,7 @@ section,
 }
 
 .pricing .btn-buy {
-  background: rgb(49,36,130);
+  background: rgb(49, 36, 130);
   color: var(--contrast-color);
   display: inline-block;
   padding: 8px 35px 10px 35px;
@@ -1812,12 +1819,12 @@ section,
 }
 
 .pricing .featured h3 {
-  background: rgb(49,36,130);
+  background: rgb(49, 36, 130);
   color: var(--contrast-color);
 }
 
 .pricing .advanced {
-  background: rgb(49,36,130);
+  background: rgb(49, 36, 130);
   color: var(--contrast-color);
   width: 200px;
   position: absolute;
@@ -1837,13 +1844,13 @@ section,
   padding-bottom: 40px;
 }
 
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
 .contact .info-item i {
   color: var(--contrast-color);
-  background: rgb(49,36,129);
+  background: rgb(49, 36, 129);
   font-size: 20px;
   width: 48px;
   height: 48px;
@@ -1872,40 +1879,44 @@ section,
   height: 100%;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
-  background: rgb(49,36,129);
+  background: rgb(49, 36, 129);
   border: 0;
   padding: 10px 30px 12px 30px;
   transition: 0.4s;
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: rgb(183, 180, 204);
 }
 
