@@ -310,6 +310,8 @@
       </section>
       <!-- /Why Us Section -->
 
+      <!-- pop up -->
+
       <!-- Features Section -->
       <section id="features" class="features section">
         <div class="container">
@@ -321,7 +323,17 @@
             >
               <div class="features-item">
                 <i class="bi bi-front" style="color: yellow"></i>
-                <h3><a href="" class="stretched-link">Front-End</a></h3>
+                <h3 class="stretched-link" onclick="openPop()">Front-End</h3>
+                <div class="popup" id="popup">
+                  <h4>Front-End</h4>
+                  <p>
+                    Front-end development is the practice of converting data to
+                    a graphical interface, through the use of HTML, CSS, and
+                    JavaScript, so that users can view and interact with that
+                    data.
+                  </p>
+                  <button type="button" onclick="closePop()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -333,7 +345,18 @@
             >
               <div class="features-item">
                 <i class="bi bi-back" style="color: #5578ff"></i>
-                <h3><a href="" class="stretched-link">Back-End</a></h3>
+                <h3 class="stretched-link" onclick="openPop2()">Back-End</h3>
+                <div class="popup" id="popup2">
+                  <h4>Back-End</h4>
+                  <p>
+                    Back-end development refers to the server-side of a website
+                    or application that handles data processing, business logic,
+                    and database interactions. It ensures that everything runs
+                    smoothly behind the scenes, making the front-end (what users
+                    see and interact with) functional and dynamic.
+                  </p>
+                  <button type="button" onclick="closePop2()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -345,7 +368,18 @@
             >
               <div class="features-item">
                 <i class="bi bi-phone" style="color: #e80368"></i>
-                <h3><a href="" class="stretched-link">Mobile App</a></h3>
+                <h3 class="stretched-link" onclick="openPop3()">Mobile App</h3>
+                <div class="popup" id="popup3">
+                  <h4>Mobile App</h4>
+                  <p>
+                    mobile app (short for mobile application) is a software
+                    program designed to run on smartphones, tablets, and other
+                    mobile devices. Mobile apps can serve various purposes,
+                    including communication, entertainment, productivity,
+                    shopping, and more.
+                  </p>
+                  <button type="button" onclick="closePop3()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -357,7 +391,21 @@
             >
               <div class="features-item">
                 <i class="bi bi-filetype-java" style="color: #e361ff"></i>
-                <h3><a href="" class="stretched-link">Java Programming</a></h3>
+                <h3 class="stretched-link" onclick="openPop4()">
+                  Java Programming
+                </h3>
+                <div class="popup" id="popup4">
+                  <h4>Java Programming</h4>
+                  <p>
+                    Java is a high-level, object-oriented programming language
+                    designed to be platform-independent, meaning it can run on
+                    any device that supports Java without requiring
+                    modification. It is widely used for web development, mobile
+                    applications (especially Android), enterprise software, and
+                    cloud-based systems.
+                  </p>
+                  <button type="button" onclick="closePop4()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -369,7 +417,23 @@
             >
               <div class="features-item">
                 <i class="bi bi-aspect-ratio-fill" style="color: #47aeff"></i>
-                <h3><a href="" class="stretched-link">UX/UI Design</a></h3>
+                <h3 class="stretched-link" onclick="openPop5()">
+                  UX/UI Design
+                </h3>
+                <div class="popup" id="popup5">
+                  <h4>UX/UI Design</h4>
+                  <p>
+                    UX design focuses on the overall experience a user has when
+                    interacting with a product, service, or system. It involves
+                    research, user psychology, and usability testing to ensure a
+                    seamless and satisfying experience.
+                    <br />UI design focuses on the aesthetics and interactive
+                    elements of a digital product. It ensures that the interface
+                    is visually appealing, consistent, and easy to use.
+                  </p>
+
+                  <button type="button" onclick="closePop5()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -381,7 +445,20 @@
             >
               <div class="features-item">
                 <i class="bi bi-c-square" style="color: #ffa76e"></i>
-                <h3><a href="" class="stretched-link">C++ Programming</a></h3>
+                <h3 class="stretched-link" onclick="openPop6()">
+                  C++ Programming
+                </h3>
+                <div class="popup" id="popup6">
+                  <h4>C++ Programming</h4>
+                  <p>
+                    C++ is a high-level, general-purpose programming language
+                    known for its efficiency, flexibility, and performance. It
+                    was developed by Bjarne Stroustrup in 1983 as an extension
+                    of the C language, incorporating object-oriented programming
+                    (OOP) features while maintaining C's power and speed.
+                  </p>
+                  <button type="button" onclick="closePop6()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -393,7 +470,20 @@
             >
               <div class="features-item">
                 <i class="bi bi-c-square" style="color: #11dbcf"></i>
-                <h3><a href="" class="stretched-link">C# Programming</a></h3>
+                <h3 class="stretched-link" onclick="openPop7()">
+                  C# Programming
+                </h3>
+                <div class="popup" id="popup7">
+                  <h4>C# Programming</h4>
+                  <p>
+                    C# (pronounced "C-sharp") is a modern, object-oriented
+                    programming language developed by Microsoft as part of its
+                    .NET framework. It is designed for building a wide range of
+                    applications, including web, desktop, mobile, cloud, and
+                    game development.
+                  </p>
+                  <button type="button" onclick="closePop7()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -405,7 +495,19 @@
             >
               <div class="features-item">
                 <i class="bi bi-file-earmark-excel" style="color: #4233ff"></i>
-                <h3><a href="" class="stretched-link">Advance Excel</a></h3>
+                <h3 class="stretched-link" onclick="openPop8()">
+                  Advance Excel
+                </h3>
+                <div class="popup" id="popup8">
+                  <h4>Advance Excel</h4>
+                  <p>
+                    Advanced Excel refers to the use of Microsoft Excel powerful
+                    tools and functions beyond basic data entry and simple
+                    formulas. It includes complex functionalities that help in
+                    data analysis, automation, and visualization.
+                  </p>
+                  <button type="button" onclick="closePop8()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -417,9 +519,19 @@
             >
               <div class="features-item">
                 <i class="bi bi-filetype-py" style="color: #b2904f"></i>
-                <h3>
-                  <a href="" class="stretched-link">Python Programming</a>
+                <h3 class="stretched-link" onclick="openPop9()">
+                  Python Programming
                 </h3>
+                <div class="popup" id="popup9">
+                  <h4>Python Programming</h4>
+                  <p>
+                    Python is a high-level, interpreted programming language
+                    known for its simplicity, readability, and versatility. It
+                    is widely used in various fields, including web development,
+                    data science, artificial intelligence, automation, and more.
+                  </p>
+                  <button type="button" onclick="closePop9()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -431,9 +543,20 @@
             >
               <div class="features-item">
                 <i class="bi bi-window-fullscreen" style="color: #b20969"></i>
-                <h3>
-                  <a href="" class="stretched-link">Full Stack Development</a>
+                <h3 class="stretched-link" onclick="openPop10()">
+                  Full Stack Development
                 </h3>
+                <div class="popup" id="popup10">
+                  <h4>Full Stack Development</h4>
+                  <p>
+                    Full-stack development refers to the practice of developing
+                    both the front-end and back-end of a website or application.
+                    Full-stack developers are proficient in both client-side and
+                    server-side technologies, allowing them to build complete
+                    products from start to finish.
+                  </p>
+                  <button type="button" onclick="closePop10()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -445,7 +568,19 @@
             >
               <div class="features-item">
                 <i class="bi bi-palette-fill" style="color: #ff5828"></i>
-                <h3><a href="" class="stretched-link">Graphic Design</a></h3>
+                <h3 class="stretched-link" onclick="openPop11()">
+                  Graphic Design
+                </h3>
+                <div class="popup" id="popup11">
+                  <h4>Graphic Design</h4>
+                  <p>
+                    Graphic design is the art of creating visual content to
+                    communicate messages. Design elements include typography,
+                    color, imagery, and layout. Graphic design is used in
+                    marketing, advertising, product design, and more.
+                  </p>
+                  <button type="button" onclick="closePop11()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -457,11 +592,19 @@
             >
               <div class="features-item">
                 <i class="bi bi-database" style="color: #29cc61"></i>
-                <h3>
-                  <a href="" class="stretched-link"
-                    >Database Management System</a
-                  >
+                <h3 class="stretched-link" onclick="openPop12()">
+                  Database Management System
                 </h3>
+                <div class="popup" id="popup12">
+                  <h4>Database Management System</h4>
+                  <p>
+                    A database management system (DBMS) is software that
+                    provides an interface for users to interact with a database.
+                    It enables users to store, retrieve, update, and manage data
+                    efficiently and securely.
+                  </p>
+                  <button type="button" onclick="closePop12()">OK</button>
+                </div>
               </div>
             </div>
             <!-- End Feature Item -->
@@ -651,7 +794,7 @@
                   alt=""
                 />
                 <div class="member-content">
-                  <h4 >Nhanh Nhim</h4>
+                  <h4>Nhanh Nhim</h4>
                   <span>ICT Professor</span>
                   <p>
                     If you want to accomplish great things, you need to be
@@ -685,7 +828,7 @@
                   alt=""
                 />
                 <div class="member-content">
-                  <h4 >Kim ChanTaro</h4>
+                  <h4>Kim ChanTaro</h4>
                   <span>Web / Ui/Ux Trainer</span>
                   <p>
                     Repellat fugiat adipisci nemo illum nesciunt voluptas
@@ -716,7 +859,7 @@
                   alt=""
                 />
                 <div class="member-content">
-                  <h4 >Men Chansethy</h4>
+                  <h4>Men Chansethy</h4>
                   <span>Student of ICT</span>
                   <p>
                     Voluptas necessitatibus occaecati quia. Earum totam
@@ -861,5 +1004,94 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Internal Script -->
+    <script>
+      var popActions = document.getElementById("popup");
+      var popActions2 = document.getElementById("popup2");
+      var popActions3 = document.getElementById("popup3");
+      var popActions4 = document.getElementById("popup4");
+      var popActions5 = document.getElementById("popup5");
+      var popActions6 = document.getElementById("popup6");
+      var popActions7 = document.getElementById("popup7");
+      var popActions8 = document.getElementById("popup8");
+      var popActions9 = document.getElementById("popup9");
+      var popActions10 = document.getElementById("popup10");
+      var popActions11 = document.getElementById("popup11");
+      var popActions12 = document.getElementById("popup12");
+
+      function openPop() {
+        popActions.classList.add("popUp-active");
+      }
+      function closePop() {
+        popActions.classList.remove("popUp-active");
+      }
+      function openPop2() {
+        popActions2.classList.add("popUp-active2");
+      }
+      function closePop2() {
+        popActions2.classList.remove("popUp-active2");
+      }
+      function openPop3() {
+        popActions3.classList.add("popUp-active3");
+      }
+      function closePop3() {
+        popActions3.classList.remove("popUp-active3");
+      }
+      function openPop4() {
+        popActions4.classList.add("popUp-active4");
+      }
+      function closePop4() {
+        popActions4.classList.remove("popUp-active4");
+      }
+      function openPop5() {
+        popActions5.classList.add("popUp-active5");
+      }
+      function closePop5() {
+        popActions5.classList.remove("popUp-active5");
+      }
+      function openPop6() {
+        popActions6.classList.add("popUp-active6");
+      }
+      function closePop6() {
+        popActions6.classList.remove("popUp-active6");
+      }
+      function openPop7() {
+        popActions7.classList.add("popUp-active7");
+      }
+      function closePop7() {
+        popActions7.classList.remove("popUp-active7");
+      }
+      function openPop8() {
+        popActions8.classList.add("popUp-active8");
+      }
+      function closePop8() {
+        popActions8.classList.remove("popUp-active8");
+      }
+      function openPop9() {
+        popActions9.classList.add("popUp-active9");
+      }
+      function closePop9() {
+        popActions9.classList.remove("popUp-active9");
+      }
+      function openPop10() {
+        popActions10.classList.add("popUp-active10");
+      }
+      function closePop10() {
+        popActions10.classList.remove("popUp-active10");
+      }
+      function openPop11() {
+        popActions11.classList.add("popUp-active11");
+      }
+      function closePop11() {
+        popActions11.classList.remove("popUp-active11");
+      }
+      function openPop12() {
+        popActions12.classList.add("popUp-active12");
+      }
+      function closePop12() {
+        popActions12.classList.remove("popUp-active12");
+      }
+    </script>
   </body>
 </html>
