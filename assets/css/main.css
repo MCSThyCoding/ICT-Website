@@ -1293,8 +1293,11 @@ section,
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
   width: 100%;
+}
+.popup button:hover{
+  background-color: rgb(128, 122, 169);
+  color: white;
 }
 .features .features-item:hover {
   border-color: rgb(49, 37, 130);
